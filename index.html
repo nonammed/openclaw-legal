@@ -1,9 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>OpenClaw</title></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw — Social Media Content Management</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; line-height: 1.6; }
+        .header { background: #111; color: #fff; padding: 20px 0; }
+        .header .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 24px; font-weight: 700; }
+        .logo span { color: #4f9cf7; }
+        nav a { color: #ccc; text-decoration: none; margin-left: 24px; font-size: 14px; }
+        nav a:hover { color: #fff; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .hero { background: linear-gradient(135deg, #0a0a0a, #1a1a2e); color: #fff; padding: 100px 0 80px; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 20px; color: #aaa; max-width: 600px; margin: 0 auto 40px; }
+        .hero .btn { display: inline-block; background: #4f9cf7; color: #fff; padding: 14px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; }
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 32px; margin-bottom: 48px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .feature-card { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .feature-card h3 { font-size: 20px; margin-bottom: 12px; }
+        .feature-card p { color: #666; font-size: 15px; }
+        .platforms { padding: 80px 0; text-align: center; }
+        .platforms h2 { font-size: 32px; margin-bottom: 16px; }
+        .platforms p { color: #666; margin-bottom: 40px; font-size: 18px; }
+        .platform-list { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        .platform-badge { background: #f0f0f0; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; }
+        .about { padding: 80px 0; background: #f8f9fa; }
+        .about h2 { font-size: 32px; margin-bottom: 24px; text-align: center; }
+        .about p { max-width: 700px; margin: 0 auto; color: #555; font-size: 16px; text-align: center; }
+        .footer { background: #111; color: #888; padding: 40px 0; text-align: center; font-size: 14px; }
+        .footer a { color: #4f9cf7; text-decoration: none; }
+        @media (max-width: 768px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
 <body>
-<h1>OpenClaw</h1>
-<p>Automated social media content management platform.</p>
-<p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Open<span>Claw</span></div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#about">About</a>
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Publish everywhere.<br>Manage from one place.</h1>
+            <p>OpenClaw is a social media content management platform that helps creators and businesses publish content across multiple platforms simultaneously.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Multi-Platform Publishing</h3>
+                    <p>Publish your content to Telegram, Instagram, VK, TikTok, YouTube, Threads, and more — all from a single dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Content Processing</h3>
+                    <p>Automatically process and optimize your content for each platform. Support for video, images, and text formats.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Project Management</h3>
+                    <p>Organize your social media accounts into projects. Configure sources, processing pipelines, and publishing rules per project.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>RSS & Webhook Sources</h3>
+                    <p>Pull content from RSS feeds, receive webhooks, or manually create posts. Flexible input for any workflow.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI-Powered Avatars</h3>
+                    <p>Generate video content with AI avatars. Turn text articles into engaging video presentations automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Analytics & Monitoring</h3>
+                    <p>Track publishing status, view job history, and monitor your content performance across all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="platforms" id="platforms">
+        <div class="container">
+            <h2>Supported Platforms</h2>
+            <p>Connect and publish to all major social media platforms</p>
+            <div class="platform-list">
+                <div class="platform-badge">Telegram</div>
+                <div class="platform-badge">Instagram</div>
+                <div class="platform-badge">VKontakte</div>
+                <div class="platform-badge">TikTok</div>
+                <div class="platform-badge">YouTube</div>
+                <div class="platform-badge">Threads</div>
+                <div class="platform-badge">MAX Messenger</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About OpenClaw</h2>
+            <p>OpenClaw is a web-based content management system designed for social media professionals, content creators, and businesses who need to maintain a presence across multiple platforms. Our platform streamlines the content creation and publishing workflow, saving time and ensuring consistent delivery across all channels.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OpenClaw. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="terms.html">Terms of Service</a> &middot;
+                <a href="privacy.html">Privacy Policy</a> &middot;
+                <a href="mailto:support@openclaw.app">Contact</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
